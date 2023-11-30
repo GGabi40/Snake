@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: black;
+    text-align: center;
+}
+
+h1 {
+    color: greenyellow;
+    font-family: monospace;
+    font-size: 3rem;
+    font-weight: 900;
+    text-shadow: 0 0 20px yellow;
+
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#board {
+    border-radius: 8px;
+    box-shadow: 0 0 20px blueviolet;
+    margin-bottom: 1.8em;
+}
+
+#repeat {
+    display: none;
+    font-size: 3rem;
+    margin: 20px auto;
+    background-color: black;
+    border: 0;
+    border-radius: 8px;
+    padding: 0;
+}
+
+#repeat:hover {
+    cursor: pointer;
+}
