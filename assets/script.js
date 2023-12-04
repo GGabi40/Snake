@@ -29,6 +29,7 @@ window.onload = () => {
   board.width = cols * blockSize;
   context = board.getContext("2d");
   repeatButton = document.querySelector('#repeat');
+  tutorial = document.querySelector('#tutorial');
 
   placeFood();
   document.addEventListener("keyup", changeDirection);
@@ -92,6 +93,7 @@ function update() {
 }
 
 function changeDirection(ev) {
+  tutorial.style.display = "none";
   if (ev.code == "ArrowUp" && velocityY != 1) {
     velocityX = 0;
     velocityY = -1;
@@ -115,3 +117,8 @@ function placeFood() {
 function reload() {
     location.reload();
 }
+
+
+// Be able to play on the phone
+// Responsible
+// Start Menu -- optional
